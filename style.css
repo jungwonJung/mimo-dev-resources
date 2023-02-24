@@ -1,13 +1,30 @@
+:root {
+/******************** COLOR ******************/
+   --Light-Pink : #BDA5AD;
+   --Maroon : #874C63;
+   --Dark-Blue : #2F4858; 
+   --Medium-Magenta-Pink : #B46169; 
+   --White-Smoke : #F6F2F2;
+   --Yellow : #FFCB62;
+   --Black : #000000; 
+   --White : #FFFFFF;
+   --Gray : #D9D9D9;
+
+
+}
+
+
+
 html, body {
-  background-color:#BDA5AD;
+  background-color:var(--Light-Pink);
   font-family: 'Poppins', sans-serif;
 }
 
 main {
-  background-color: white;
+  background-color:var(--White);
   width: 1080px;
   height: 870px;
-  margin: 100px 100px;
+  margin: 100px 500px;
   display: flex;
   justify-content: center;
 }
@@ -20,7 +37,7 @@ hr {
 .small-circle{
   margin-left:25px;
   margin-top:10px;
-  background-color:#FFCB62;
+  background-color:var(--Yellow);
   width: 20px;
   height: 20px;
   border-radius:50%;
@@ -34,14 +51,14 @@ hr {
   height:70px;
   width:70px;
   border-radius:50%;
-  background-color:#FFCB62;
-  color: white;
+  background-color:var(--Yellow);
+  color: var(--White);
   text-align:center;
   font-size:50px;
 }
 
 .left-side-container {
-  background-color: #874C63;
+  background-color: var(--Maroon);
   width: 430px;
   display: flex;
   flex-direction: column;
@@ -65,20 +82,20 @@ hr {
 }
 
 .left-side-container > :nth-child(1) h2{
-  color: white;
+  color: var(--White);
   margin-right: 10px;
 }
 
 .left-side-container > :nth-child(1) p{
-  color: white;
+  color: var(--White);
 }
 
 .left-side-container > :nth-child(2) {
   width: 90%;
   height: 30px;
   margin-left: 15px;
-  background-color: #2F4858;
-  color: #D9D9D9;
+  background-color: var(--Dark-Blue);
+  color: var(--Gray);
   border: none;
   border-radius: 8px;
   margin-bottom:20px;
@@ -104,7 +121,7 @@ hr {
 }
 
 .choice {
-  background-color: #2F4858;
+  background-color: var(--Dark-Blue);
 }
 
 .left-side-list-item > :nth-child(1) {
@@ -128,7 +145,7 @@ hr {
 
 .left-side-list-item > :nth-child(2) p {
   margin :0 0 0 0;
-  color: #D9D9D9;
+  color: var(--Gray);
 }
 
 .left-side-list-item > :nth-child(3) {
@@ -137,7 +154,7 @@ hr {
 }
 
 .left-side-list-item > :nth-child(3) p {
-  color:#D9D9D9;
+  color:var(--Gray);
   font-size:12px;
 }
 
@@ -149,7 +166,7 @@ hr {
 .right-side-top {
   width: 100%;
   height: 100px;
-  background-color: #B46169;
+  background-color: var(--Medium-Magenta-Pink);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -164,18 +181,18 @@ hr {
 }
 
 .right-side-top > :nth-child(2) h2{
-  color: white;
+  color: var(--White);
   margin: 10px 0;
 }
 
 .right-side-top > :nth-child(2) p{
   margin: 20px 0;
-  color: #D9D9D9;
+  color: var(--Gray);
 }
 
 .right-side-middle {
   padding-top: 10px;
-  background-color: #F6F2F2;
+  background-color: var(--White-Smoke);
   height: 710px;
 }
 
@@ -191,7 +208,7 @@ hr {
   text-align: left;
   width: 55%;
   border-radius: 24px;
-  background-color: white;
+  background-color: var(--White);
 }
 
 .send-message > :nth-child(1) p{
@@ -227,7 +244,7 @@ hr {
   text-align: left;
   width: 55%;
   border-radius: 24px;
-  background-color: white;
+  background-color: var(--White);
 }
 
 
@@ -239,7 +256,7 @@ hr {
 
 .message-input > :nth-child(1) {
   border: none;
-  color: #9D9C9C;
+  color: var(--Gray);
   font-size: 28px;
 }
 
