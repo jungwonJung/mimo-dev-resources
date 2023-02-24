@@ -9,8 +9,6 @@
    --Black : #000000; 
    --White : #FFFFFF;
    --Gray : #D9D9D9;
-
-
 }
 
 
@@ -24,7 +22,7 @@ main {
   background-color:var(--White);
   width: 1080px;
   height: 870px;
-  margin: 100px 500px;
+  margin: 100px 420px;
   display: flex;
   justify-content: center;
 }
