@@ -43,6 +43,7 @@ html, body {
 }
 
 .main-container {
+  margin: 0 350px;
   display: flex;
   flex-direction: row;
 }
