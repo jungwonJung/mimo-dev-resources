@@ -33,6 +33,7 @@ hr {
 }
 
 .small-circle{
+  line-height: 20px;  
   margin-left:25px;
   margin-top:10px;
   background-color:var(--Yellow);
@@ -58,8 +59,6 @@ hr {
 .left-side-container {
   background-color: var(--Maroon);
   width: 430px;
-  display: flex;
-  flex-direction: column;
 }
 
 
@@ -194,7 +193,7 @@ hr {
   height: 710px;
 }
 
-.send-message {
+.send-message-box {
   margin-top: 15px;
   display: flex;
   flex-direction: row;
@@ -202,43 +201,43 @@ hr {
   height: 80px;
 }
 
-.send-message > :nth-child(1) {
+.send-message-box > :nth-child(1) {
   text-align: left;
   width: 55%;
   border-radius: 24px;
   background-color: var(--White);
 }
 
-.send-message > :nth-child(1) p{
+.send-message-box > :nth-child(1) p{
   margin:15px;
 }
 
-.send-message > :nth-child(2) {
+.send-message-box > :nth-child(2) {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin: 20px;
 }
 
-.receive-message {
+.receive-message-box {
   margin-top: 15px;
   display: flex;
   flex-direction: row;
   height: 80px;
 }
 
-.receive-message > :nth-child(1) {
+.receive-message-box > :nth-child(1) {
     width: 50px;
   height: 50px;
   border-radius: 50%;
   margin: 20px;
 }
 
-.receive-message > :nth-child(2) p{
+.receive-message-box > :nth-child(2) p{
   margin:15px;
 }
 
-.receive-message > :nth-child(2) {
+.receive-message-box > :nth-child(2) {
   text-align: left;
   width: 55%;
   border-radius: 24px;
