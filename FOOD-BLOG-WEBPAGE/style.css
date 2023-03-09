@@ -1,0 +1,151 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 200px auto 50px;
+  grid-template-areas:
+    "header header header header"
+    "slogan slogan slogan slogan"
+    "card-container card-container card-container sidebar"
+    "footer footer footer footer";
+}
+
+.header {
+  background-color: aliceblue;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.header img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+}
+
+.slogan {
+  grid-area: slogan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-container {
+  grid-area: card-container;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 30px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  width: 90%;
+  justify-self: center;
+  gap: 12px;
+  box-shadow: 5px 5px 20px gray;
+}
+
+.card h2,
+.card p {
+  padding: 0 15px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card button {
+  margin-bottom: 20px;
+  background-color: orange;
+  border: none;
+  border-radius: 16px;
+  align-self: center;
+  padding: 12px;
+  color: white;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  gap: 30px;
+}
+
+.sidebar img {
+  width: 70%;
+  border-radius: 12px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.social-links i {
+  font-size: 30px;
+  color: orange;
+}
+
+.footer {
+  background-color: aliceblue;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-container {
+    grid-template-rows: 50px 200px auto auto 50px;
+    grid-template-areas:
+      "header header header header"
+      "slogan slogan slogan slogan"
+      "card-container card-container card-container card-container"
+      "sidebar sidebar sidebar sidebar"
+      "footer footer footer footer";
+  }
+
+  .sidebar {
+    padding-bottom: 40px;
+  }
+
+  .sidebar img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 468px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
