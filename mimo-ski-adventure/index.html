@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ski Adventure</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="container">
+  <main class="main-container">
+    <section class="left-side-register">
+      <h2>Register for the ultimate ski adventure</h2>
+      <h3>Your basic info</h3>
+      <div class="name-input">
+        <p>Name and surname *</p>
+        <input type="text">
+      </div>
+      <div class="email-password-input">
+        <div>
+          <p>Email *</p>
+          <input type="email" placeholder=" example@mail.com">
+          <p class="required">this field is required</p>
+        </div>
+        <div>
+          <p>Password *</p>
+          <input type="password" placeholder="  * * * *">
+        </div>
+      </div>
+      <div class="age-checkbox">
+        <p>Age</p>
+        <div>
+          <input type="radio" name="age" value="under18" id="teenager">
+          <label for="teenager">Under 18</label>
+        </div>
+        <div>
+          <input type="radio" name="age" value="18andover" id="adult">
+          <label for="adult">18 and over</label>
+        </div>
+      </div>
+      <h3>Tell us about yourself</h3>
+      <form class="text-area-box">
+        <label for="textarea">Your biography</label>
+        <input type="textarea" name="textarea" id="textarea">
+      </form>
+      <div class="select-location">
+        <label for="selectlocation">Select location
+        </label>
+        <select name="select" id="select">
+          <option value="Mayrhofen">Mayrhofen</option>
+          <option value="Paris">Paris</option>
+          <option value="Katowice">Katowice</option>
+          <option value="Berlin">Berlin</option>
+        </select>
+      </div>
+      <div class="check-equipment">
+        <p>What equipment would you like to rent?</p>
+        <div>
+          <input type="checkbox" name="skis" value="skis" id="skis" checked />
+          <label for="skis">Skis</label>
+        </div>
+        <div>
+          <input type="checkbox" name="helmet" value="helmet" id="helmet">
+          <label for="helmet">Helmet</label>
+        </div>
+        <div>
+          <input type="checkbox" name="goggles" value="goggles" id="goggles">
+          <label for="goggles">Goggles</label>
+        </div>
+        <div>
+          <input type="checkbox" name="skiboots" value="skiboots" id="skiboots">
+          <label for="skiboots">Ski boots</label>
+        </div>
+        <div>
+          <input type="checkbox" name="skispoles" value="skispoles" id="skispoles">
+          <label for="skispoles">Ski poles</label>
+        </div>
+      </div>
+      <div class="reset-submit">
+        <button>Reset</button>
+        <button>Submit</button>
+      </div>
+    </section>
+    <section class="right-side-container">
+      <div class="right-side-text">
+        Epic experience in the snow
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
